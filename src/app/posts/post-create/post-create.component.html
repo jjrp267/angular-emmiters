@@ -1,0 +1,15 @@
+<!-- post-create.component.html -->
+<h3>Añadir item</h3>
+
+<form>
+    <div class="form-group">
+      <label>code</label>
+      <input type="text" class="form-control" name="code" required [(ngModel)]="post.code">
+    </div>
+    <div class="form-group">
+      <label>value</label>
+      <textarea name="value" class="form-control" cols="10" rows="2" required [(ngModel)]="post.value"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="onAddPost()">Aceptar</button>
+  </form>
+

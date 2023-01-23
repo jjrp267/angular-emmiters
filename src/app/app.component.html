@@ -1,0 +1,8 @@
+<app-post-create (postCreated)="onPostAdded($event)"></app-post-create>
+
+<app-element-create (elementCreated)="onElementAdded($event)"></app-element-create>
+
+
+<div class="dropdown-divider"></div>
+
+<app-post-list [posts]="storedPosts" [elements]="storedElements"></app-post-list>

@@ -1,0 +1,13 @@
+<h3>Añadir elemento</h3>
+<form>
+  <div class="form-group">
+    <label>key</label>
+    <input type="text" class="form-control" name="key" required [(ngModel)]="element.key">
+  </div>
+  <div class="form-group">
+    <label>value</label>
+    <textarea name="value2" class="form-control" cols="10" rows="2" required [(ngModel)]="element.value2"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onAddElement()">Aceptar</button>
+</form>
+
